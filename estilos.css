@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Montserrat:wght@500&family=Source+Sans+3&family=Work+Sans:wght@600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.title {
+    width: 850px;
+    margin: 6% auto;
+    text-align: center;
+}
+
+.title h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #98A684;
+    margin: 0;
+}
+
+.title h1 {
+    max-width: 100%;
+    font-family: 'Cardo', serif;
+    font-size: 40px;
+    margin: 0;
+}
+h1::after,h1::before {
+    content: "";
+    position: absolute;
+    background-color:#98A684;
+    top: 3em;
+    opacity: 60%;
+}
+
+h1::before {
+    left: 180px;
+    margin: 0px 55px;
+    width: 301px;
+    height: 2px;
+}
+
+h1::after {
+    right: 180px;
+    margin: 0px 43px;
+    width: 310px;
+    height: 2px;
+}
+
+.list {
+    margin-top: 35px;
+    text-align: left;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.list td:before {
+    content: "•";
+    color: #98A684;
+    display: inline-block;
+    width: 1em;
+    margin-left: 1em;
+}
+
+.content-list {
+    list-style: none;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.content-list::before {
+    content: "";
+    position: absolute;
+    background-color: #98A684;
+    width: 820px;
+    height: 2px;
+    bottom: 49%;
+    margin-left: 20px;
+    opacity: 60%;
+}
