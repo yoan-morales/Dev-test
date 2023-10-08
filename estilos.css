@@ -5,7 +5,7 @@
 }
 
 .title {
-    width: 850px;
+    width:900px;
     margin: 6% auto;
     text-align: center;
 }
@@ -33,14 +33,14 @@ h1::after,h1::before {
 
 h1::before {
     left: 180px;
-    margin: 0px 55px;
-    width: 301px;
+    margin: 0px 28px;
+    width: 330px;
     height: 2px;
 }
 
 h1::after {
     right: 180px;
-    margin: 0px 43px;
+    margin: 0px 40px;
     width: 310px;
     height: 2px;
 }
@@ -49,7 +49,7 @@ h1::after {
     margin-top: 35px;
     text-align: left;
     font-family: 'Source Sans 3', sans-serif;
-    font-size: 14px;
+    font-size: 14.5px;
     font-weight: 600;
 }
 
@@ -64,16 +64,16 @@ h1::after {
 .content-list {
     list-style: none;
     width: 100%;
-    margin-left: 10px;
+    
 }
 
 .content-list::before {
     content: "";
     position: absolute;
     background-color: #98A684;
-    width: 820px;
+    width: 852px;
     height: 2px;
     bottom: 49%;
-    margin-left: 20px;
+    margin-left: 16px;
     opacity: 60%;
 }
