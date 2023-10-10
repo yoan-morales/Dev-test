@@ -196,8 +196,8 @@ width: 800px;
 
 .slider-controls {
     position: absolute;
-    bottom: -200px;
     left: 550px;
+    bottom: -200px;
     transform: translateX(-50%);
 }
 
@@ -245,6 +245,10 @@ width: 800px;
         left: 2.7em;
     }
 
+    .fondo {
+        object-fit: cover;
+    }
+
     .slider-card {
         position: relative;
         align-items: center;
@@ -272,9 +276,87 @@ width: 800px;
         margin: 3px 55px 3px 55px;
     }
 
+    .card-content-one p {
+        font-size: 13px;
+    }
+
     .card-content-two {
         width: 300px;
         height: 300px;
+    }
+
+    .card-content-two h3 {
+        font-size: 12px;
+        margin: 20px 55px 10px 55px;
+    }
+
+    .card-content-two h1 {
+        font-size: 30px;
+        margin: 5px 55px 2px 55px;
+    }
+
+    .card-content-two p {
+        font-size: 13px;
+        margin: 5px 55px 3px 55px;
+    }
+
+    .card-content-two button {
+        margin-top: 3px;
+    }
+
+    .slider-controls {
+        left: 300px;
+        bottom: -100px;
+    }
+}
+
+@media (max-width: 320px) {
+    .container-text {
+        max-width: 650%;
+        height: 210px;
+        margin-top: 32px;
+    }
+    
+
+    .container-text h1::before {
+        width: 240px;
+        top: 1.9em;
+        left: -0.1em;
+    }
+
+    .container-text h1::after {
+        
+        width: 240px;
+        top: 1.9em;
+        right: -10em;
+    }
+
+    .list {
+        font-size: 12.5px;
+    }
+
+    .content-list::before {
+        width: 675px;
+        margin-bottom: -0.9em;
+        left: 0em;
+    }
+
+    .slider-container{
+    position: absolute;
+    width: 700px;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .slider-card {
+        align-items: center;
+        justify-content: center ;
+        width: 600px; 
+    }
+
+    .slider-controls {
+        left: 210px;
+        bottom: -200px;
     }
 }
 
