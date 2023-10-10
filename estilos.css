@@ -1,23 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Cardo&family=Montserrat:wght@500&family=Source+Sans+3&family=Work+Sans:wght@600&display=swap');
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-.title {
-    width:900px;
+.container-text {
+    width: 900px;
     margin: 6% auto;
+    margin-bottom: 8%;
     text-align: center;
 }
 
-.title h3 {
+.container-text h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     color: #98A684;
     margin: 0;
 }
 
-.title h1 {
+.container-text h1 {
     max-width: 100%;
     font-family: 'Cardo', serif;
     font-size: 40px;
@@ -31,17 +34,17 @@ h1::after,h1::before {
     opacity: 60%;
 }
 
-h1::before {
+.container-text h1::before {
     left: 180px;
-    margin: 0px 28px;
+    margin: 0px 20px;
     width: 330px;
     height: 2px;
 }
 
-h1::after {
+.container-text h1::after {
     right: 180px;
-    margin: 0px 40px;
-    width: 310px;
+    margin: 0px 30px;
+    width: 314px;
     height: 2px;
 }
 
@@ -64,7 +67,6 @@ h1::after {
 .content-list {
     list-style: none;
     width: 100%;
-    
 }
 
 .content-list::before {
@@ -77,3 +79,202 @@ h1::after {
     margin-left: 16px;
     opacity: 60%;
 }
+
+.slider-container {
+    background-size: cover;
+    background: rgba(152, 166, 132, 0.85) no-repeat padding-box;
+    height: 500px; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fondo {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.slider-card {
+width: 800px;
+   
+}
+
+.card-content-one {
+    padding: 0px;
+    background-color: #FFFFFF;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    
+}
+
+.card-content-one h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    color: #98A684;
+    margin: 80px 55px 20px 55px;
+}
+
+.card-content-one h1 {
+    font-family: 'Cardo', serif;
+    width: 60%;
+    font-size: 40px;
+    margin: 5px 55px 5px 55px;
+}
+
+
+.card-content-one p {
+    font-family: 'Source Sans 3', sans-serif;
+    width: 70%;
+    font-weight: 600;
+    font-size: 13.5px;
+    margin: 5px 55px 20px 55px;
+}
+
+.card-content-two {
+    padding: 0px;
+    background-color: #FFFFFF;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    
+}
+
+.card-content-two h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    color: #98A684;
+    margin: 50px 55px 20px 55px;
+}
+
+.card-content-two h1 {
+    font-family: 'Cardo', serif;
+    width: 60%;
+    font-size: 40px;
+    margin: 5px 55px 5px 55px;
+}
+
+
+.card-content-two p {
+    font-family: 'Source Sans 3', sans-serif;
+    width: 70%;
+    font-weight: 600;
+    font-size: 13.5px;
+    margin: 5px 55px 20px 55px;
+}
+
+
+
+.card-content-two button {
+    background-color: #98A684;
+    color: #FFFFFF;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 12px;
+    width: 140px;
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 55px;
+    border: none;
+    cursor: pointer;
+}
+
+.card-content-two button:hover {
+    background-color: rgba(152, 166, 132, 0.9);
+}
+
+
+.img-slide {
+    width: 400px;
+    height: 400px;
+}
+
+.slider-controls {
+    position: absolute;
+    bottom: -200px;
+    left: 550px;
+    transform: translateX(-50%);
+}
+
+.prev-button,
+.next-button {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.prev-button img,
+.next-button img {
+    width: 50px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .container-text {
+        width: 700px;
+        height: 210px;
+        margin: 4% auto;
+    }
+
+    .container-text h1::before {
+        width: 232px;
+        top: 1.9em;
+        left: 0.8em;
+    }
+
+    .container-text h1::after {
+        
+        width: 228px;
+        top: 1.9em;
+        right: 0.6em;
+    }
+
+    .list {
+        font-size: 12px;
+    }
+
+    .content-list::before {
+        width: 665px;
+        margin-bottom: 3em;
+        left: 2.7em;
+    }
+
+    .slider-card {
+        position: relative;
+        align-items: center;
+        justify-content: center ;
+        width: 600px; 
+    }
+    
+    .card-content-one {
+        width: 400px;
+        height: 300px;
+    }
+
+    .img-slide {
+        width: 300px;
+        height: 300px;
+    }
+
+    .card-content-one h3 {
+        font-size: 12px;
+        margin: 35px 55px 25px 55px;
+    }
+
+    .card-content-one h1 {
+        font-size: 30px;
+        margin: 3px 55px 3px 55px;
+    }
+
+    .card-content-two {
+        width: 300px;
+        height: 300px;
+    }
+}
+
